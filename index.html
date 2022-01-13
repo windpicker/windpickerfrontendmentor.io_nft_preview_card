@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!--Bootstrap  CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+
+
+
+</head>
+<body>
+  <div class="card container col-8 col-sm-6 col-md-4 col-xl-2 align-self-center">
+    <div id="nft_img" class="nft_img container-fluid p-0">
+        <div id="nft_img2" class="nft_img2 container-fluid"> 
+        <div class="eye_icon container-fluid"></div>
+        </div>
+    </div>
+    
+
+    <div class="content">
+      <p class="nft_title">Equilibrium #3429<p>
+      <p class="nft_description">Our Equilibrium collection promotes balance and calm.</p>  
+    </div>
+
+    <div class="container skills">
+      <div class="row p-0">
+        <div class="col-6 p-0">
+          <span>
+            <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>
+            <span class="eth_font">0.041 ETH</span>
+          </span>
+        </div>
+        <div class="col-6 p-0 eth_days_left">
+          <span>
+            <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
+            <span class="eth_days_left ">3 days left</span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <hr class="nft_line_to_creator">
+    <div>
+      <img class="nft_avatar" src="images/image-avatar.png">
+      <span class="ntf_creator_text" style="color:hsl(215, 51%, 70%);  margin-left:10px">Creation of</span><span class="ntf_creator_text author" style="color:hsl(0, 0%, 100%) ;"> Jules Wyvern</span>
+    </div>
+  </div> 
+  
+  <br><br><br><br>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Davide Dalla Pria</a>.
+  </div>
+  <input type="text" id="boh" placeholder="aaa" style="display: none;">
+
+  
+  <script>
+        function prova(){
+          /*let nft_img = document.querySelector('.nft_img');
+          let width  = nft_img.width;
+          document.getElementById("boh").placeholder = width;*/
+
+          var elem = document.getElementById('nft_img'),
+          properties = window.getComputedStyle(elem, null),
+          height = properties.height,
+          width = properties.width;
+          document.getElementById("boh").placeholder = width;
+
+          document.getElementById("nft_img").style.height = width;
+          document.getElementById('nft_img2').style.height = width;
+          document.getElementsByClassName('eye_icon container-fluid')[0].style.height = width;
+        }
+        window.onload = prova;
+        window.onresize = prova;
+  </script>
+
+
+  <!-- jQuery and Bootstrap Bundle-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>

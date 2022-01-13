@@ -1,0 +1,158 @@
+body{
+    background-color: hsl(217, 54%, 11%) !important;
+    font-family: 'Outfit', sans-serif !important;
+}
+
+.attribution{
+    font-family: 'Licorice', cursive;
+    font-style: normal;
+    font-variant: normal;
+    
+    font-size: 18px;
+    line-height: 26px;
+    color: hsl(0, 0%, 100%);
+}
+
+.nft_title{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: hsl(0, 0%, 100%);
+    padding-top: 15px; 
+
+
+}
+
+.nft_description{
+
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: hsl(215, 51%, 70%);
+    letter-spacing: 0px; 
+     
+}
+
+.nft_title:hover{
+    color: hsl(178, 100%, 50%) !important;
+    transition-duration: 700ms;
+}
+
+.nft_img{
+    border-radius: 4%;        
+    width: 302px;    
+    /*height: 302px;*/
+    background-image: url("images/image-equilibrium.jpg");    
+    background-size:cover;
+    cursor: pointer;
+    position: relative; 
+    background-repeat: no-repeat;
+      
+}
+
+.nft_img2{
+    width: 302px; 
+    /*height: 302px;*/
+    border-radius: 4%;
+    background-color: #00FFF8;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    background-size:contain;
+}
+
+
+.nft_img2:hover{
+        opacity: 0.7;
+        transition-duration: 1500ms;
+}
+
+
+.eye_icon{
+    width: 302px;
+    height: 302px;
+    background-image: url("images/icon-view.svg");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    top: 0;
+    left: 0;
+   
+}
+
+.eye_icon:hover{
+    opacity: 1 !important;   
+}
+
+.card{
+    background-color:hsl(216, 50%, 16%) !important; 
+    border-radius: 4% !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0px 0px 40px 20px hsl(216, 50%, 8%);
+    margin-top: 15px;
+       position: relative;
+}
+
+.eth_font{
+    color: hsl(178, 100%, 50%) !important;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.eth_days_left{
+    color: hsl(215, 51%, 70%) !important;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.nft_line_to_creator{
+    border-color: hsl(215, 51%, 70%, 0.5);
+}
+
+.nft_avatar{
+    width: 20%;
+    height: auto;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.ntf_creator_text{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.author:hover{
+    color: hsl(178, 100%, 50%) !important;
+    transition-duration: 700ms;
+}
+
+
+@media (max-width: 376px){
+    .eth_days_left{
+        text-align: left!important;
+    }
+}
+@media (min-width: 377px) and (max-width: 1440px) {
+    .eth_days_left{
+        text-align: right!important;
+    }
+}
