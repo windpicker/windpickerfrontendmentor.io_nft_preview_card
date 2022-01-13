@@ -11,8 +11,8 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot_desktop](./screenshots/preview_card_component-desktop.png)
-![screenshot_mobile](./screenshots/preview_card_component-mobile.png)
+![Screenshot desktop](./screenshot/preview_card_component-desktop.png)
+![Screenshot mobile](./screenshot/preview_card_component-mobile.png)
 
 ### Built with
 
