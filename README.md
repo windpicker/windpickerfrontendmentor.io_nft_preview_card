@@ -11,7 +11,7 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot_desktop]("./screenshots/preview_card_component-desktop.png")
+![screenshot_desktop]("https://github.com/windpicker/windpickerfrontendmentor.io_nft_preview_card/blob/main/screenshot/preview_card_component-desktop.png")
 ![screenshot_mobile]("./screenshots/preview_card_component-mobile.png")
 
 ### Built with
